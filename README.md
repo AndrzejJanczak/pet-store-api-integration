@@ -10,23 +10,27 @@ W przeciwnym razie możesz skorzystać z instrukcji: <a href="https://laravel.co
 
 Sklonuj repozytorium:
 ```
-git clone [this_repo_address] .
+git clone https://github.com/AndrzejJanczak/pet-store-api-integration .
 ```
 
-Utwórz plik .env w głownym katalogu projektu i skopiuj do niego zawartość pliku .env.example
+<p style="font-size: 15px; padding-top: 15px;"><b>WAŻNE:</b></p>
+Utwórz plik <span style="color: red;"><b>.env</b></span> w głownym katalogu projektu i skopiuj do niego zawartość pliku <span style="color: red;"><b>.env.example</b></span>
 (ponieważ nie ma tutaj żadnych prawdziwych sekretów, dopuszczamy taką możliwość).
 
+<br/>
 Uruchom w katalogu projektu:
+
 ```
 npm install
 npm run build
 composer install
+php artisan migrate
 ```
 
 
 ## Użycie:
 
-Jeśli operacje z sekcji instalacja przebiegły pomyślnie, możesz teraz uruchomić aplikację w trybie deweloperskim. 
+Jeśli operacje z sekcji instalacja przebiegły pomyślnie, możesz teraz uruchomić aplikację w trybie deweloperskim.
 <br/>Wykonaj w katalogu projektu:
 ```
 composer run dev
